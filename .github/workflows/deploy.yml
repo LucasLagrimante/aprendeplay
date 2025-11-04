@@ -28,4 +28,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build  # O diretório onde os arquivos construídos são gerados
+        publish_dir: ./dist  # O diretório onde os arquivos construídos são gerados
