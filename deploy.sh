@@ -6,10 +6,10 @@ npm run build
 
 echo "Preparing deploy directory..."
 rm -rf deploy-temp
-mkdir -p deploy-temp/aprendeplay
+mkdir -p deploy-temp/AprendePlay
 
 echo "Copying built files..."
-cp -r dist/* deploy-temp/aprendeplay/
+cp -r dist/* deploy-temp/AprendePlay/
 
 echo "Deploying to GitHub Pages..."
 npx gh-pages -d deploy-temp --dotfiles
