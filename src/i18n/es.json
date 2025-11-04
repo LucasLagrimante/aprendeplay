@@ -3,10 +3,22 @@
     "home": "Inicio",
     "letters": "Letras",
     "numbers": "Números",
-    "colors": "Colores"
+    "colors": "Colores",
+    "colorsQuiz": "Juego de Colores"
   },
   "home": {
     "title": "¡Aprende jugando!",
     "subtitle": "Elige lo que quieres explorar hoy"
+  },
+  "quiz": {
+    "score": "Puntos",
+    "streak": "Racha",
+    "selectColor": "Haz clic en el color para repetir. Elige el color correcto:",
+    "correct": "¡Felicidades!",
+    "incorrect": "¡Oops!",
+    "tryAgain": "¡Intenta de nuevo!"
+  },
+  "common": {
+    "back": "Volver"
   }
 }

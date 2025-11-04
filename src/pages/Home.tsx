@@ -85,6 +85,13 @@ export default function Home() {
 
   const buttons: MenuButtonProps[] = [
     {
+      to: '/colors',
+      label: t('menu.colors'),
+      icon: '🎨',
+      color: '#10B981',
+      gradient: 'linear-gradient(135deg, #10B981 0%, #06B6D4 100%)',
+    },
+    {
       to: '/letters',
       label: t('menu.letters'),
       icon: '🔤',
@@ -99,11 +106,11 @@ export default function Home() {
       gradient: 'linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%)',
     },
     {
-      to: '/colors',
-      label: t('menu.colors'),
-      icon: '🎨',
-      color: '#10B981',
-      gradient: 'linear-gradient(135deg, #10B981 0%, #06B6D4 100%)',
+      to: '/colors-quiz',
+      label: t('menu.colorsQuiz'),
+      icon: '🎮',
+      color: '#F59E0B',
+      gradient: 'linear-gradient(135deg, #F59E0B 0%, #EC4899 100%)',
     },
   ]
 
@@ -116,7 +123,7 @@ export default function Home() {
         transition={{ duration: 0.6 }}
         className="mb-8"
       >
-        <img src="/assets/logo.png" alt="AprendePlay" className="h-32 md:h-40 w-auto" />
+        <img src="/assets/logo.png" alt="AprendePlay" className="h-48 md:h-56 w-auto" />
       </motion.div>
 
       {/* Título */}
@@ -135,7 +142,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="w-full max-w-2xl grid grid-cols-1 md:grid-cols-3 gap-6 mt-12"
+        className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12"
       >
         {buttons.map((button, index) => (
           <motion.div

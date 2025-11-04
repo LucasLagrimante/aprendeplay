@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import Letters from './pages/Letters'
 import Numbers from './pages/Numbers'
 import Colors from './pages/Colors'
+import ColorsQuiz from './pages/ColorsQuiz'
 import Navigation from './components/Navigation'
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/letters" element={<Letters />} />
           <Route path="/numbers" element={<Numbers />} />
           <Route path="/colors" element={<Colors />} />
+          <Route path="/colors-quiz" element={<ColorsQuiz />} />
         </Routes>
       </main>
     </div>

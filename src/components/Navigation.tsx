@@ -27,9 +27,10 @@ const Navigation = () => {
 
   const links = [
     { path: '/', label: t('menu.home') || 'Início' },
+    { path: '/colors', label: t('menu.colors') || 'Cores' },
+    { path: '/colors-quiz', label: t('menu.colorsQuiz') || 'Jogo de Cores' },
     { path: '/letters', label: t('menu.letters') || 'Letras' },
     { path: '/numbers', label: t('menu.numbers') || 'Números' },
-    { path: '/colors', label: t('menu.colors') || 'Cores' },
   ]
 
   const isActive = (path: string) => location.pathname === path
@@ -69,7 +70,7 @@ const Navigation = () => {
           to="/"
           className="font-bold text-xl text-white hover:text-purple-400 transition-colors flex-shrink-0"
         >
-          <img src="/assets/logo-horizontal.png" alt="AprendePlay" className="h-10 w-auto" />
+          <img src="/assets/logo-horizontal.png" alt="AprendePlay" className="h-7 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
