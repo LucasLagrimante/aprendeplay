@@ -1,0 +1,48 @@
+# AprendePlay - Robots.txt for SEO
+# Controla como os crawlers de buscadores acessam o site
+
+# Permitir todos os crawlers
+User-agent: *
+Allow: /
+Allow: /AprendePlay/
+Disallow: /assets/audio/
+Disallow: /*.json$
+Disallow: /node_modules/
+
+# Google Search Console
+User-agent: Googlebot
+Allow: /
+Allow: /AprendePlay/
+Crawl-delay: 0
+
+# Bing Search
+User-agent: Bingbot
+Allow: /
+Allow: /AprendePlay/
+Crawl-delay: 1
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+Allow: /AprendePlay/
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+Allow: /AprendePlay/
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+Allow: /AprendePlay/
+
+# Archive.org Wayback Machine
+User-agent: ia_archiver
+Allow: /
+Allow: /AprendePlay/
+
+# Apontar para o sitemap
+Sitemap: https://lucaslagrimante.github.io/AprendePlay/sitemap.xml
+
+# Configurações globais
+Request-rate: 30/60 (requests per 60 seconds)

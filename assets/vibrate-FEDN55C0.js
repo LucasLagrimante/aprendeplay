@@ -1,0 +1,1 @@
+function e(e,n){if("undefined"==typeof window||!("speechSynthesis"in window))return;const t=new SpeechSynthesisUtterance(e);t.lang=n,t.rate=.95;try{speechSynthesis.cancel(),speechSynthesis.speak(t)}catch(s){}}function n(e=50){if("vibrate"in navigator)try{navigator.vibrate(e)}catch(n){}}const t={tap:10};export{t as V,e as s,n as v};

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- HOME PAGE - Portuguese (Default) -->
+  <url>
+    <loc>https://lucaslagrimante.github.io/AprendePlay/</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaslagrimante.github.io/AprendePlay/?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaslagrimante.github.io/AprendePlay/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lucaslagrimante.github.io/AprendePlay/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lucaslagrimante.github.io/AprendePlay/?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaslagrimante.github.io/AprendePlay/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaslagrimante.github.io/AprendePlay/?lang=it" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lucaslagrimante.github.io/AprendePlay/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lucaslagrimante.github.io/AprendePlay/?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaslagrimante.github.io/AprendePlay/" />
+  </url>
+
+  <!-- COLORS PAGE - All Languages -->
+  <url>
+    <loc>https://lucaslagrimante.github.io/AprendePlay/colors</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaslagrimante.github.io/AprendePlay/colors?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaslagrimante.github.io/AprendePlay/colors?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lucaslagrimante.github.io/AprendePlay/colors?lang=es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lucaslagrimante.github.io/AprendePlay/colors?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaslagrimante.github.io/AprendePlay/colors?lang=de" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaslagrimante.github.io/AprendePlay/colors?lang=it" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lucaslagrimante.github.io/AprendePlay/colors?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lucaslagrimante.github.io/AprendePlay/colors?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaslagrimante.github.io/AprendePlay/colors" />
+  </url>
+
+  <!-- LETTERS PAGE - All Languages -->
+  <url>
+    <loc>https://lucaslagrimante.github.io/AprendePlay/letters</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaslagrimante.github.io/AprendePlay/letters?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaslagrimante.github.io/AprendePlay/letters?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lucaslagrimante.github.io/AprendePlay/letters?lang=es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lucaslagrimante.github.io/AprendePlay/letters?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaslagrimante.github.io/AprendePlay/letters?lang=de" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaslagrimante.github.io/AprendePlay/letters?lang=it" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lucaslagrimante.github.io/AprendePlay/letters?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lucaslagrimante.github.io/AprendePlay/letters?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaslagrimante.github.io/AprendePlay/letters" />
+  </url>
+
+  <!-- NUMBERS PAGE - All Languages -->
+  <url>
+    <loc>https://lucaslagrimante.github.io/AprendePlay/numbers</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaslagrimante.github.io/AprendePlay/numbers?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaslagrimante.github.io/AprendePlay/numbers?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lucaslagrimante.github.io/AprendePlay/numbers?lang=es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lucaslagrimante.github.io/AprendePlay/numbers?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaslagrimante.github.io/AprendePlay/numbers?lang=de" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaslagrimante.github.io/AprendePlay/numbers?lang=it" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lucaslagrimante.github.io/AprendePlay/numbers?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lucaslagrimante.github.io/AprendePlay/numbers?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaslagrimante.github.io/AprendePlay/numbers" />
+  </url>
+
+  <!-- COLORS QUIZ PAGE - All Languages -->
+  <url>
+    <loc>https://lucaslagrimante.github.io/AprendePlay/colors-quiz</loc>
+    <lastmod>2025-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://lucaslagrimante.github.io/AprendePlay/colors-quiz?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://lucaslagrimante.github.io/AprendePlay/colors-quiz?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://lucaslagrimante.github.io/AprendePlay/colors-quiz?lang=es" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lucaslagrimante.github.io/AprendePlay/colors-quiz?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://lucaslagrimante.github.io/AprendePlay/colors-quiz?lang=de" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://lucaslagrimante.github.io/AprendePlay/colors-quiz?lang=it" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://lucaslagrimante.github.io/AprendePlay/colors-quiz?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lucaslagrimante.github.io/AprendePlay/colors-quiz?lang=zh" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lucaslagrimante.github.io/AprendePlay/colors-quiz" />
+  </url>
+
+</urlset>

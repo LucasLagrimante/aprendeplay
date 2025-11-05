@@ -1,0 +1,91 @@
+{
+  "name": "AprendePlay - Aprenda Brincando",
+  "short_name": "AprendePlay",
+  "description": "Plataforma educativa interativa para aprender cores, letras e números em 8 idiomas. Perfeito para crianças!",
+  "start_url": "/AprendePlay/",
+  "scope": "/AprendePlay/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#FF6B6B",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/AprendePlay/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/AprendePlay/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/AprendePlay/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/AprendePlay/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/AprendePlay/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/AprendePlay/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": [
+    "education",
+    "kids"
+  ],
+  "screenshots": [
+    {
+      "src": "/AprendePlay/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Aprenda Cores",
+      "short_name": "Cores",
+      "description": "Aprenda cores interativamente",
+      "url": "/AprendePlay/colors",
+      "icons": [{ "src": "/AprendePlay/logo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Aprenda Letras",
+      "short_name": "Letras",
+      "description": "Aprenda o alfabeto",
+      "url": "/AprendePlay/letters",
+      "icons": [{ "src": "/AprendePlay/logo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Aprenda Números",
+      "short_name": "Números",
+      "description": "Aprenda números",
+      "url": "/AprendePlay/numbers",
+      "icons": [{ "src": "/AprendePlay/logo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Quiz de Cores",
+      "short_name": "Quiz",
+      "description": "Jogo de quiz de cores",
+      "url": "/AprendePlay/colors-quiz",
+      "icons": [{ "src": "/AprendePlay/logo.png", "sizes": "192x192" }]
+    }
+  ]
+}
