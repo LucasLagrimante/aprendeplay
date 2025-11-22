@@ -298,7 +298,7 @@ export default function SyllableGame() {
           )}
 
           {/* Confete */}
-          {showParticles && <Confetti />}
+          {showParticles && <Confetti count={15 + streak * 5} />}
         </div>
       </div>
     </>
@@ -307,11 +307,12 @@ export default function SyllableGame() {
 
 /**
  * Componente de confete
+ * Quantidade aumenta progressivamente com a sequência
  */
-function Confetti() {
+function Confetti({ count = 15 }: { count?: number }) {
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden">
-      {[...Array(20)].map((_, i) => (
+      {[...Array(count)].map((_, i) => (
         <motion.div
           key={i}
           className="absolute w-2 h-2 rounded-full"
