@@ -309,7 +309,7 @@ export default function ColorsQuiz() {
         )}
 
         {/* Partículas de confete (acerto) */}
-        {showParticles && feedback === 'correct' && <Confetti />}
+        {showParticles && feedback === 'correct' && <Confetti count={20 + streak * 10} />}
       </div>
       </div>
     </>
@@ -318,11 +318,12 @@ export default function ColorsQuiz() {
 
 /**
  * Componente de confete/partículas para acerto
+ * Quantidade aumenta com a sequência de acertos
  */
-function Confetti() {
+function Confetti({ count = 20 }: { count?: number }) {
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden">
-      {[...Array(20)].map((_, i) => (
+      {[...Array(count)].map((_, i) => (
         <motion.div
           key={i}
           className="absolute w-2 h-2 rounded-full"
