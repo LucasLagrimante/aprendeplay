@@ -70,7 +70,7 @@ const MenuButton: React.FC<MenuButtonProps> = ({ to, label, icon, color, gradien
         >
           <span className="text-3xl sm:text-2xl md:text-5xl">{icon}</span>
           <span className="hidden sm:block">{label}</span>
-          <span className="block sm:hidden text-[11px]">{label.split(' ')[0]}</span>
+          <span className="block sm:hidden text-[10px] leading-tight text-center">{label}</span>
         </motion.div>
 
         {/* Sombra de hover */}

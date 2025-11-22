@@ -20,6 +20,37 @@ const getLanguageCode = (lang: string): string => {
 }
 
 /**
+ * Gera a fala fonética de uma sílaba
+ * Ex: "BO" → "Bê com Ó, BÓ"
+ */
+const getPhoneticSpeech = (syllable: string): string => {
+  const consonantNames: { [key: string]: string } = {
+    'B': 'Bê', 'C': 'Cê', 'D': 'Dê', 'F': 'Éfe', 'G': 'Guê',
+    'H': 'Agá', 'J': 'Jota', 'K': 'Cá', 'L': 'Éle', 'M': 'Ême',
+    'N': 'Êne', 'P': 'Pê', 'Q': 'Quê', 'R': 'Érre', 'S': 'Ésse',
+    'T': 'Tê', 'V': 'Vê', 'W': 'Dábliu', 'X': 'Xis', 'Z': 'Zê'
+  }
+
+  const vowels = ['A', 'E', 'I', 'O', 'U', 'Á', 'É', 'Í', 'Ó', 'Ú', 'Ã', 'Õ', 'Â', 'Ê', 'Ô']
+  const upper = syllable.toUpperCase()
+
+  const parts: string[] = []
+
+  for (const char of upper) {
+    if (consonantNames[char]) {
+      parts.push(consonantNames[char])
+    } else if (vowels.includes(char)) {
+      parts.push(char)
+    }
+  }
+
+  if (parts.length === 0) return syllable
+  if (parts.length === 1) return `${parts[0]}, ${syllable}`
+
+  return `${parts.join(' com ')}, ${syllable}`
+}
+
+/**
  * Jogo de Sílabas e Palavras
  * Criança toca nas sílabas na ordem correta para formar palavras
  */
@@ -103,8 +134,9 @@ export default function SyllableGame() {
     const correctSyllable = syllables[currentIndex]
 
     if (syllable === correctSyllable) {
-      // Acertou a sílaba
-      speak(syllable.toLowerCase(), langCode)
+      // Acertou a sílaba - falar de forma fonética
+      const phoneticText = getPhoneticSpeech(syllable)
+      speak(phoneticText, langCode)
       vibrate([30])
 
       const newSelected = [...selectedSyllables, syllable]
