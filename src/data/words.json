@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "pt": "bola",
+    "en": "ball",
+    "es": "pelota",
+    "syllables_pt": ["BO", "LA"],
+    "syllables_en": ["BALL"],
+    "syllables_es": ["PE", "LO", "TA"],
+    "icon": "26BD"
+  },
+  {
+    "id": 2,
+    "pt": "casa",
+    "en": "house",
+    "es": "casa",
+    "syllables_pt": ["CA", "SA"],
+    "syllables_en": ["HOUSE"],
+    "syllables_es": ["CA", "SA"],
+    "icon": "1F3E0"
+  },
+  {
+    "id": 3,
+    "pt": "pato",
+    "en": "duck",
+    "es": "pato",
+    "syllables_pt": ["PA", "TO"],
+    "syllables_en": ["DUCK"],
+    "syllables_es": ["PA", "TO"],
+    "icon": "1F986"
+  },
+  {
+    "id": 4,
+    "pt": "gato",
+    "en": "cat",
+    "es": "gato",
+    "syllables_pt": ["GA", "TO"],
+    "syllables_en": ["CAT"],
+    "syllables_es": ["GA", "TO"],
+    "icon": "1F431"
+  },
+  {
+    "id": 5,
+    "pt": "sapo",
+    "en": "frog",
+    "es": "rana",
+    "syllables_pt": ["SA", "PO"],
+    "syllables_en": ["FROG"],
+    "syllables_es": ["RA", "NA"],
+    "icon": "1F438"
+  },
+  {
+    "id": 6,
+    "pt": "lua",
+    "en": "moon",
+    "es": "luna",
+    "syllables_pt": ["LU", "A"],
+    "syllables_en": ["MOON"],
+    "syllables_es": ["LU", "NA"],
+    "icon": "1F319"
+  },
+  {
+    "id": 7,
+    "pt": "sol",
+    "en": "sun",
+    "es": "sol",
+    "syllables_pt": ["SOL"],
+    "syllables_en": ["SUN"],
+    "syllables_es": ["SOL"],
+    "icon": "2600"
+  },
+  {
+    "id": 8,
+    "pt": "flor",
+    "en": "flower",
+    "es": "flor",
+    "syllables_pt": ["FLOR"],
+    "syllables_en": ["FLOW", "ER"],
+    "syllables_es": ["FLOR"],
+    "icon": "1F33B"
+  },
+  {
+    "id": 9,
+    "pt": "peixe",
+    "en": "fish",
+    "es": "pez",
+    "syllables_pt": ["PEI", "XE"],
+    "syllables_en": ["FISH"],
+    "syllables_es": ["PEZ"],
+    "icon": "1F41F"
+  },
+  {
+    "id": 10,
+    "pt": "uva",
+    "en": "grape",
+    "es": "uva",
+    "syllables_pt": ["U", "VA"],
+    "syllables_en": ["GRAPE"],
+    "syllables_es": ["U", "VA"],
+    "icon": "1F347"
+  },
+  {
+    "id": 11,
+    "pt": "ovo",
+    "en": "egg",
+    "es": "huevo",
+    "syllables_pt": ["O", "VO"],
+    "syllables_en": ["EGG"],
+    "syllables_es": ["HUE", "VO"],
+    "icon": "1F95A"
+  },
+  {
+    "id": 12,
+    "pt": "mão",
+    "en": "hand",
+    "es": "mano",
+    "syllables_pt": ["MÃO"],
+    "syllables_en": ["HAND"],
+    "syllables_es": ["MA", "NO"],
+    "icon": "270B"
+  }
+]
