@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import colors from '../data/colors.json'
 import { speak } from '../utils/speak'
 import { vibrate } from '../utils/vibrate'
+import { playBackgroundMusic, stopBackgroundMusic, playCorrectSound, playWrongSound } from '../utils/sounds'
 import SEO from '../components/SEO'
 
 type Color = typeof colors[0]
@@ -73,9 +74,15 @@ export default function ColorsQuiz() {
     }, 300)
   }
 
-  // Inicializar quiz
+  // Inicializar quiz e música de fundo
   useEffect(() => {
     generateNewQuiz()
+    playBackgroundMusic(0.3)
+
+    // Cleanup ao sair da página
+    return () => {
+      stopBackgroundMusic()
+    }
   }, [])
 
   /**
@@ -95,6 +102,7 @@ export default function ColorsQuiz() {
       setStreak((prev) => prev + 1)
       vibrate([30, 50, 30])
       setShowParticles(true)
+      playCorrectSound(0.5)
 
       // Falar "certo" em vez de repetir a cor
       const correctWord = i18n.language === 'pt' ? 'certo' : i18n.language === 'es' ? 'correcto' : 'correct'
@@ -109,6 +117,7 @@ export default function ColorsQuiz() {
       setFeedback('incorrect')
       vibrate([100, 50, 100, 50, 100])
       setStreak(0)
+      playWrongSound(0.5)
 
       // Falar "errado" e pronunciar a cor correta para aprendizado
       const wrongWord = i18n.language === 'pt' ? 'errado' : i18n.language === 'es' ? 'incorrecto' : 'wrong'
