@@ -234,7 +234,7 @@ export default function ColorsQuiz() {
         >
         {options.map((option, index) => {
           const isCorrectAnswer = feedback === 'correct' && option.id === targetColor?.id
-          const isWrongAnswer = feedback === 'incorrect' && option.id !== targetColor?.id
+          const isIncorrectFeedback = feedback === 'incorrect'
 
           return (
             <motion.button
@@ -243,9 +243,9 @@ export default function ColorsQuiz() {
               disabled={isAnswering}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{
-                opacity: isWrongAnswer ? 0.5 : 1,
+                opacity: isIncorrectFeedback ? 0.5 : 1,
                 scale: isCorrectAnswer ? [1, 1.1, 1] : 1,
-                x: isWrongAnswer ? [0, -5, 5, 0] : 0,
+                x: isIncorrectFeedback ? [0, -5, 5, 0] : 0,
                 rotate: isCorrectAnswer ? [0, -5, 5, 0] : 0,
               }}
               transition={{ delay: index * 0.1, duration: 0.4 }}
@@ -257,7 +257,7 @@ export default function ColorsQuiz() {
                 boxShadow:
                   isCorrectAnswer
                     ? '0 0 40px rgba(253, 224, 71, 0.8)'
-                    : isWrongAnswer
+                    : isIncorrectFeedback
                       ? 'none'
                       : '0 0 20px rgba(255, 255, 255, 0.2)',
               }}
