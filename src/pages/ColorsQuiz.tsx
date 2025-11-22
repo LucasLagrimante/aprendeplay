@@ -119,9 +119,8 @@ export default function ColorsQuiz() {
       setStreak(0)
       playWrongSound(0.5)
 
-      // Falar "errado" e pronunciar a cor correta para aprendizado
-      const wrongWord = i18n.language === 'pt' ? 'errado' : i18n.language === 'es' ? 'incorrecto' : 'wrong'
-      speak(wrongWord, langCode)
+      // Falar o nome da cor que clicou (para aprendizado)
+      speak(colorName(selectedColor), langCode)
 
       // Voltar para tentar novamente (NÃO gera novo quiz)
       setTimeout(() => {
