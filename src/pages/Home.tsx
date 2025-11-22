@@ -173,6 +173,13 @@ export default function Home() {
           color: '#F59E0B',
           gradient: 'linear-gradient(135deg, #F59E0B 0%, #EC4899 100%)',
         },
+        {
+          to: '/syllable-game',
+          label: t('menu.syllableGame'),
+          icon: '🔠',
+          color: '#8B5CF6',
+          gradient: 'linear-gradient(135deg, #8B5CF6 0%, #06B6D4 100%)',
+        },
       ]
     }
   ]

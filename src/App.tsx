@@ -9,6 +9,7 @@ const Letters = lazy(() => import('./pages/Letters'))
 const Numbers = lazy(() => import('./pages/Numbers'))
 const Colors = lazy(() => import('./pages/Colors'))
 const ColorsQuiz = lazy(() => import('./pages/ColorsQuiz'))
+const SyllableGame = lazy(() => import('./pages/SyllableGame'))
 
 // Fallback component para carregamento
 const LoadingFallback = () => (
@@ -43,6 +44,7 @@ export default function App() {
             <Route path="/numbers" element={<Numbers />} />
             <Route path="/colors" element={<Colors />} />
             <Route path="/colors-quiz" element={<ColorsQuiz />} />
+            <Route path="/syllable-game" element={<SyllableGame />} />
           </Routes>
         </Suspense>
       </main>

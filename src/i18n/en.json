@@ -6,7 +6,8 @@
     "letters": "Letters",
     "numbers": "Numbers",
     "colors": "Colors",
-    "colorsQuiz": "Colors Game"
+    "colorsQuiz": "Colors Game",
+    "syllableGame": "Syllable Game"
   },
   "home": {
     "title": "Learn while playing!",
@@ -22,5 +23,9 @@
   },
   "common": {
     "back": "Back"
+  },
+  "syllable": {
+    "tapToHear": "Tap to hear",
+    "buildWord": "Build the word"
   }
 }
