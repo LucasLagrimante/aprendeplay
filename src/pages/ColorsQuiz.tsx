@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import colors from '../data/colors.json'
 import { speak } from '../utils/speak'
 import { vibrate } from '../utils/vibrate'
+import { playBackgroundMusic, stopBackgroundMusic, playCorrectSound, playWrongSound } from '../utils/sounds'
 import SEO from '../components/SEO'
 
 type Color = typeof colors[0]
@@ -73,9 +74,15 @@ export default function ColorsQuiz() {
     }, 300)
   }
 
-  // Inicializar quiz
+  // Inicializar quiz e música de fundo
   useEffect(() => {
     generateNewQuiz()
+    playBackgroundMusic(0.3)
+
+    // Cleanup ao sair da página
+    return () => {
+      stopBackgroundMusic()
+    }
   }, [])
 
   /**
@@ -95,6 +102,7 @@ export default function ColorsQuiz() {
       setStreak((prev) => prev + 1)
       vibrate([30, 50, 30])
       setShowParticles(true)
+      playCorrectSound(0.5)
 
       // Falar "certo" em vez de repetir a cor
       const correctWord = i18n.language === 'pt' ? 'certo' : i18n.language === 'es' ? 'correcto' : 'correct'
@@ -109,6 +117,7 @@ export default function ColorsQuiz() {
       setFeedback('incorrect')
       vibrate([100, 50, 100, 50, 100])
       setStreak(0)
+      playWrongSound(0.5)
 
       // Falar "errado" e pronunciar a cor correta para aprendizado
       const wrongWord = i18n.language === 'pt' ? 'errado' : i18n.language === 'es' ? 'incorrecto' : 'wrong'
@@ -196,17 +205,13 @@ export default function ColorsQuiz() {
         >
           <p className="text-sm sm:text-2xl mb-2 sm:mb-4 opacity-90">{t('quiz.selectColor') || 'Clique na cor:'}</p>
 
+          {/* Botão de som para ouvir a cor */}
           {targetColor && (
             <motion.button
               onClick={() => speak(colorName(targetColor), langCode)}
-              className="mx-auto w-20 h-20 sm:w-32 sm:h-32 rounded-full border-4 border-white shadow-2xl cursor-pointer hover:brightness-110 transition-all"
-              style={{ backgroundColor: targetColor.color }}
+              className="mx-auto w-16 h-16 sm:w-24 sm:h-24 rounded-full bg-white/20 border-4 border-white shadow-2xl cursor-pointer hover:bg-white/30 transition-all flex items-center justify-center"
               animate={{
                 scale: [1, 1.05, 1],
-                boxShadow: [
-                  '0 0 0 0 rgba(255,255,255,0.7)',
-                  '0 0 0 20px rgba(255,255,255,0)',
-                ],
               }}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
@@ -215,18 +220,9 @@ export default function ColorsQuiz() {
                 repeat: Infinity,
                 ease: 'easeOut',
               }}
-            />
-          )}
-
-          {/* Texto da cor */}
-          {targetColor && (
-            <motion.p
-              className="text-lg sm:text-3xl font-bold mt-2 sm:mt-6"
-              animate={{ opacity: [0.7, 1, 0.7] }}
-              transition={{ duration: 2, repeat: Infinity }}
             >
-              {colorName(targetColor).toUpperCase()}
-            </motion.p>
+              <span className="text-3xl sm:text-5xl">🔊</span>
+            </motion.button>
           )}
         </motion.div>
 
@@ -283,27 +279,7 @@ export default function ColorsQuiz() {
               </motion.div>
             )}
 
-            {feedback === 'incorrect' && option.id === targetColor?.id && (
-              <motion.div
-                className="absolute inset-0 rounded-2xl flex items-center justify-center text-5xl"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ type: 'spring', stiffness: 300 }}
-              >
-                ✓
-              </motion.div>
-            )}
 
-            {feedback === 'incorrect' && option.id !== targetColor?.id && (
-              <motion.div
-                className="absolute inset-0 rounded-2xl flex items-center justify-center text-5xl opacity-50"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ type: 'spring', stiffness: 300 }}
-              >
-                ✗
-              </motion.div>
-            )}
             </motion.button>
             )
           })}
